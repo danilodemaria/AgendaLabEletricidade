@@ -40,7 +40,7 @@ public class Main extends javax.swing.JFrame {
         titulo.setText("Laboratórios Eletrônica e Eletrotécnica");
 
         insertTeacher.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        insertTeacher.setText("Cadastrar Professor");
+        insertTeacher.setText("Cadastrar Aula");
         insertTeacher.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 insertTeacherFocusGained(evt);
@@ -53,7 +53,12 @@ public class Main extends javax.swing.JFrame {
         });
 
         insertClass.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        insertClass.setText("Cadastrar Aula");
+        insertClass.setText("Cadastrar Professor");
+        insertClass.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                insertClassMouseClicked(evt);
+            }
+        });
 
         listTeacher.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         listTeacher.setText("Professores Cadastrados");
@@ -152,10 +157,17 @@ public class Main extends javax.swing.JFrame {
 
     private void insertTeacherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insertTeacherMouseClicked
         // TODO add your handling code here:
-        InsertTeacher a = new InsertTeacher();
+        InsertClass a = new InsertClass();
         a.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_insertTeacherMouseClicked
+
+    private void insertClassMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insertClassMouseClicked
+        // TODO add your handling code here:
+        InsertTeacher b = new InsertTeacher();
+        b.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_insertClassMouseClicked
 
     /**
      * @param args the command line arguments

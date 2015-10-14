@@ -110,7 +110,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Cadastrar Professor"/>
+            <Property name="text" type="java.lang.String" value="Cadastrar Aula"/>
           </Properties>
           <Events>
             <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="insertTeacherFocusGained"/>
@@ -122,8 +122,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Cadastrar Aula"/>
+            <Property name="text" type="java.lang.String" value="Cadastrar Professor"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="insertClassMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="listTeacher">
           <Properties>
